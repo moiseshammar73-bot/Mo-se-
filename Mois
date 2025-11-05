@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encouragements Chrétiens</title>
+    <style>
+        /* ===== Global ===== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* ===== Navigation ===== */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* ===== Sections ===== */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* ===== Videos ===== */
+        iframe {
+            width: 100%;
+            height: 360px;
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* ===== Formulaire ===== */
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 40px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            iframe {
+                height: 250px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                padding: 12px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 35px 15px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Encouragements Chrétiens</h1>
+    <p>Inspire et motive ton âme chaque jour</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#videos">Vidéos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue !</h2>
+    <div class="card">
+        <p>Découvre des messages inspirants et des vidéos pour renforcer ta foi et ta motivation chaque jour. Que ton cœur trouve paix et courage en Dieu.</p>
+    </div>
+</section>
+
+<section id="apropos">
+    <h2>À propos</h2>
+    <div class="card">
+        <p>Ce site a été créé pour partager des histoires, des citations et des encouragements chrétiens afin de t’aider à avancer dans la vie avec foi, espoir et courage.</p>
+    </div>
+</section>
+
+<section id="videos">
+    <h2>Vidéos Inspirantes</h2>
+    <div class="card">
+        <iframe src="https://www.youtube.com/embed/M3eF2LBgJfI" allowfullscreen loading="lazy" title="Message chrétien"></iframe>
+        <p>Message chrétien pour l’inspiration et la foi.</p>
+    </div>
+    <div class="card">
+        <iframe src="https://www.youtube.com/embed/Vb3Xq1z_lkE" allowfullscreen loading="lazy" title="Encouragement quotidien"></iframe>
+        <p>Encouragements chrétiens pour rester motivé chaque jour.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <form action="https://formspree.io/f/mnqvwqen" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p>Les messages seront envoyés à notre email de contact (via Formspree).</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Encouragements Chrétiens. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
